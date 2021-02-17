@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Add question</p>
+<form action="/add_question" method="POST">
+  <label>text</label>
+  <input type="text" value="text" name="text">
+  <input type="submit" value="Add question">
+</form>
+{% endblock %}

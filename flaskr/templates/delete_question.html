@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>Are you sure to delete this question:{{post.text}}</p>
+<form action="/delete_question/{{post.id}}" method="POST">
+  <input value="Delete" type="Submit">
+</form>
+{% endblock %}

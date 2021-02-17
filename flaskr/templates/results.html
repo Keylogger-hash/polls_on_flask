@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>{{question.text}}</p>
+<ul>
+  {% for res in results %}
+  <li>{{res.choice_text}} Vote:{{res.votes}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

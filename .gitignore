@@ -1,0 +1,6 @@
+# Database
+*.db
+
+#os generated files
+migrations/
+__pycache__/

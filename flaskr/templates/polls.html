@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Polls</h1>
+<p>See the question</p>
+<p>
+  {% for q in question%}
+  {{q.id}}. {{q.text}}
+  <a href="{{url_for('.choice',id=q.id)}}">Vote</a>
+  <a href="{{url_for('.result',id=q.id)}}">Show results</a><br>
+  {%endfor%}
+</p>
+
+{% endblock %}
